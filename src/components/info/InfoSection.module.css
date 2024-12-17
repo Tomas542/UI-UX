@@ -4,9 +4,11 @@
   margin: 20px 0;
   padding: 10px;
   border-radius: 15px;
-  background-color: #D88700; 
+  border-color: black;
+  border-width: 115px;
+  background-color: orange; 
   color: black;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   scrollbar-width: thin; 
   scrollbar-color: black orange; 
 }

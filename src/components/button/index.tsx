@@ -1,8 +1,9 @@
 import styles from './Button.module.css';
+
 interface ButtonProps {
   label: string;
   onClick: () => void;
-  color?: 'blue' | 'red' | 'orange';
+  color?: 'blue' | 'red' | 'orange' | 'dark-orange';
   size?: 'small' | 'medium' | 'large';
 }
 export const Button = ({ label, onClick, color = 'orange', size = 'medium' }: ButtonProps) => {
