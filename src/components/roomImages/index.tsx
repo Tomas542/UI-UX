@@ -39,7 +39,6 @@ interface RoomImageProps {
   room: "base" | "cinema" | "playing"
 }
 
-// export const RoomImages = () => {
 export const RoomImages = ({room}: RoomImageProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 

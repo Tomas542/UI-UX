@@ -1,14 +1,15 @@
 import { useState } from "react";
 
 import styles from "./Dropdown.module.css";
-import { TableTops } from "../ThinkingGames";
+import { TableTops } from "../Games";
 
 interface DropdownButtonProps {
   label: string
   default_open: boolean
+  game_class: "classic" | "mafia" | "imagination" | "thinking"
 }
 
-export default function DropdownThinking({label = "Click me!", default_open = false}: DropdownButtonProps) {
+export default function DropdownGames({game_class, label = "Click me!", default_open = false}: DropdownButtonProps) {
   const [dropdownState, setDropdownState] = useState({ open: default_open});
 
   const handleDropdownClick = () => {
@@ -26,7 +27,7 @@ return (
     </button>
   {dropdownState.open && (
     <div className={styles.dropdown}>
-      <TableTops />
+      <TableTops game_class={game_class}/>
     </div>
   )}
   </div>
