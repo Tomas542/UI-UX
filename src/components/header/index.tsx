@@ -23,7 +23,7 @@ export const Header = () => {
   };
 
   return (
-    <div className={styles.headerContainer}>
+    <header className={styles.headerContainer}>
       <Button
         label="Главная"
         onClick={handleClickMain}
@@ -48,6 +48,6 @@ export const Header = () => {
         color="dark-orange"
         size="medium"
       />
-    </div>
+    </header>
   );
 }

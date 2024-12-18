@@ -3,7 +3,7 @@ import styles from './Activities.module.css';
 
 export const Activities = () => {
   return (
-    <div>
+    <div className={styles.activityBorder}>
       <ul role='list' className={styles.activitiesContainer}>
         <Activity 
           img_src="https://optim.tildacdn.com/tild3162-3761-4831-a630-636661326136/-/resize/90x/-/format/webp/icons8---100.png"

@@ -11,7 +11,7 @@ import React, { useEffect, useState } from 'react';
 import { Button } from '../components/button';
 import { Slogan } from '../components/slogan';
 import { useNavigate } from 'react-router-dom';
-import {InfoSection} from '../components/info';
+import {InfoSection} from '../components/infoCaffe';
 import {Reviews} from '../components/reviews';
 
 function Menu() {

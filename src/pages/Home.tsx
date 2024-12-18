@@ -1,8 +1,10 @@
 import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
 import { Activities } from "../components/activities";
-import { InfoSection } from "../components/info";
+import { InfoSection } from "../components/infoCaffe";
 import { Reviews } from "../components/reviews";
+import { WhySection } from "../components/why";
+import { Footer } from "../components/footer";
 
 import styles from "./Home.module.css"
 
@@ -33,7 +35,10 @@ function Home() {
         <Activities />
         <h2>Отзывы</h2>
         <Reviews />
+        <h2>Почему именно мы?</h2>
+        <WhySection />
       </div>
+      <Footer />
     </div>
   );
 }
