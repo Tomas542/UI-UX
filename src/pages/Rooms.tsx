@@ -4,9 +4,7 @@ import { InfoSection } from "../components/roomInfo";
 import { RoomImages } from "../components/roomImages";
 import { Footer } from "../components/footer";
 
-import styles from "./Home.module.css"
-
-// import mySVG from "../../public/logo.svg"
+import styles from "./Pages.module.css"
 
 function Rooms() {
   return (

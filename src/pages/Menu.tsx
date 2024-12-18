@@ -4,7 +4,7 @@ import { InfoSection } from "../components/infoMenu";
 import DropdownMenu from "../components/menuDropdown";
 import { Footer } from "../components/footer";
 
-import styles from "./Home.module.css"
+import styles from "./Pages.module.css"
 
 function Menu() {
   return (

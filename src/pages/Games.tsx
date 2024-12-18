@@ -4,7 +4,7 @@ import { InfoSection } from "../components/roomInfo";
 import DropdownGames from "../components/gameDropdown";
 import { Footer } from "../components/footer";
 
-import styles from "./Home.module.css"
+import styles from "./Pages.module.css"
 
 function Games() {
   return (

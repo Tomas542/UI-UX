@@ -1,15 +1,13 @@
 import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
-import { Activities } from "../components/homeActivities";
 import { InfoSection } from "../components/infoCaffe";
+import { Activities } from "../components/homeActivities";
 import { Reviews } from "../components/homeReviews";
 import { WhySection } from "../components/homeWhy";
 import { Footer } from "../components/footer";
-
-import styles from "./Home.module.css"
-
-
 // import mySVG from "../../public/logo.svg"
+
+import styles from "./Pages.module.css"
 
 function Home() {
   return (
