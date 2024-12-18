@@ -1,14 +1,16 @@
 import { useState } from "react";
+import { Food } from "../food";
 
 import styles from "./Dropdown.module.css";
-import { TableTops } from "../Beer";
+
 
 interface DropdownButtonProps {
   label: string
   default_open: boolean
+  food_class: "tea" | "snacks" | "beer"
 }
 
-export default function DropdownMenuBeer({label = "Click me!", default_open = false}: DropdownButtonProps) {
+export default function DropdownMenu({food_class, label = "Click me!", default_open = false}: DropdownButtonProps) {
   const [dropdownState, setDropdownState] = useState({ open: default_open});
 
   const handleDropdownClick = () => {
@@ -26,7 +28,7 @@ return (
     </button>
   {dropdownState.open && (
     <div className={styles.dropdown}>
-      <TableTops />
+      <Food food_class={food_class}/>
     </div>
   )}
   </div>

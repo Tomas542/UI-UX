@@ -1,16 +1,10 @@
 import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
 import { InfoSection } from "../components/infoMenu";
-import DropdownTeas from "../components/dropdownMenuTeas";
-import DropdownMenuSnacks from "../components/dropdownMenuSnacks";
-import DropdownMenuBeer from "../components/dropdownMenuBeer";
+import DropdownMenu from "../components/dropdownMenu";
 import { Footer } from "../components/footer";
 
 import styles from "./Home.module.css"
-
-
-
-// import mySVG from "../../public/logo.svg"
 
 function Menu() {
   return (
@@ -32,17 +26,20 @@ function Menu() {
       </div>
       <div className={styles.text}>
         <InfoSection />
-        <DropdownTeas 
+        <DropdownMenu 
           label="Чаи и кофе"
           default_open={true}
+          food_class="tea"
         />
-        <DropdownMenuSnacks 
+        <DropdownMenu
           label="Снеки"
           default_open={true}
+          food_class="snacks"
         />
-        <DropdownMenuBeer 
+        <DropdownMenu
           label="Пенное"
           default_open={true}
+          food_class="beer"
         />
       </div>
       <Footer />
