@@ -1,6 +1,6 @@
 import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
-import { InfoSection } from "../components/infoCaffe";
+import { InfoSection } from "../components/homeInfoCaffe";
 import { Activities } from "../components/homeActivities";
 import { Reviews } from "../components/homeReviews";
 import { WhySection } from "../components/homeWhy";

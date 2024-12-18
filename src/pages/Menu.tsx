@@ -1,6 +1,6 @@
 import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
-import { InfoSection } from "../components/infoMenu";
+import { InfoSection } from "../components/menuInfo";
 import DropdownMenu from "../components/menuDropdown";
 import { Footer } from "../components/footer";
 
