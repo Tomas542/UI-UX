@@ -1,14 +1,14 @@
 import { useState } from "react";
 
 import styles from "./Dropdown.module.css";
-import { TableTops } from "../tableGames";
+import { TableTops } from "../Teas";
 
 interface DropdownButtonProps {
   label: string
   default_open: boolean
 }
 
-export default function Dropdown({label = "Click me!", default_open = false}: DropdownButtonProps) {
+export default function DropdownTeas({label = "Click me!", default_open = false}: DropdownButtonProps) {
   const [dropdownState, setDropdownState] = useState({ open: default_open});
 
   const handleDropdownClick = () => {

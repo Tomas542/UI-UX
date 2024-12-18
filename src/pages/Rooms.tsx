@@ -2,6 +2,8 @@ import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
 import { InfoSection } from "../components/infoRooms";
 import { RoomImages } from "../components/roomImages";
+import { RoomImages2 } from "../components/foo2";
+import { RoomImages3 } from "../components/foo3";
 import { Footer } from "../components/footer";
 
 import styles from "./Home.module.css"
@@ -31,7 +33,8 @@ function Rooms() {
         <InfoSection />
         <h2>Залы</h2>
         <RoomImages />
-        
+        <RoomImages2 />
+        <RoomImages3 />
       </div>
       <Footer />
     </div>

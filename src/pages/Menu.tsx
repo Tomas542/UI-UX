@@ -1,105 +1,51 @@
-// function Menu() {
-//   return (
-//     <div>
-//     <h1>MMM</h1>
-//     </div>
-//   );
-// }
-// export default Menu;
+import { Header } from "../components/header";
+import { Slogan } from "../components/slogan";
+import { InfoSection } from "../components/infoMenu";
+import DropdownTeas from "../components/dropdownMenuTeas";
+import DropdownMenuSnacks from "../components/dropdownMenuSnacks";
+import DropdownMenuBeer from "../components/dropdownMenuBeer";
+import { Footer } from "../components/footer";
 
-import React, { useEffect, useState } from 'react';
-import { Button } from '../components/button';
-import { Slogan } from '../components/slogan';
-import { useNavigate } from 'react-router-dom';
-import {InfoSection} from '../components/infoCaffe';
-import {Reviews} from '../components/reviews';
+import styles from "./Home.module.css"
+
+
+
+// import mySVG from "../../public/logo.svg"
 
 function Menu() {
-  const navigate = useNavigate();
-
-  const handleClickMain = () => {
-    navigate('/');
-  };
-
-  const handleClickRooms = () => {
-    navigate('/rooms');
-  };
-  
-  const handleClickGames = () => {
-    navigate('/games');
-  };
-
   return (
-    <div style={{ // лTODO: убрать стиль контейнера в отдельный css.
-      display: "flex", 
-      flexDirection: "column", 
-      alignItems: "center", 
-      justifyContent: "center", 
-      minHeight: "100vh",
-      width: "100%",
-      overflowX: "hidden",
-      backgroundColor: "#fffbe6",
-      paddingTop: "50px"
-    }}>
-      <div style={{ // TODO: убрать стиль контейнера в отдельный css.
-        position: "fixed", 
-        top: 0, 
-        width: "100%", 
-        backgroundColor: "#E3D44C", 
-        display: "flex", 
-        justifyContent: "space-around", 
-        padding: "10px 0", 
-        zIndex: 1000 
-      }}>
-        <Button
-          label="Главная"
-          onClick={handleClickMain}
-          color="dark-orange"
-          size="large"
-        />
-        <Button
-          label="Залы"
-          onClick={handleClickRooms}
-          color="dark-orange"
-          size="large"
-        />
-        <Button
-          label="Настолки"
-          onClick={handleClickGames}
-          color="dark-orange"
-          size="large"
-        />
-      </div>
-      <div style={{ 
-        display: "flex", 
-        flexDirection: "column", 
-        alignItems: "center", 
-        justifyContent: "center", 
-        height: "75vh"
-      }}>
+    <div className={styles.main}>
+      <Header />
+      <div className={styles.slogan}>
         <div style={{display: "flex", justifyContent: "center"}}>
           <Slogan 
             fontSize={"60px"} 
-            text='вдвоём ещё по одной'
+            text="приятные мелочи жизни"
           />
         </div>
-        <div style={{ margin: "0" }}>
+        <div>
           <Slogan 
             fontSize={"40px"}
-            text='совмещаем приятное с приятным 🍻🃏'
+            text="которыми так просто наслаждаться"
           />
         </div>
       </div>
-      <div style={{ 
-        display: "flex", 
-        flexDirection: "column", 
-        alignItems: "center", 
-        justifyContent: "center", 
-        marginTop: "50px" 
-      }}>
+      <div className={styles.text}>
         <InfoSection />
-        <Reviews />
+        <DropdownTeas 
+          label="Чаи и кофе"
+          default_open={true}
+        />
+        <DropdownMenuSnacks 
+          label="Снеки"
+          default_open={true}
+        />
+        <DropdownMenuBeer 
+          label="Пенное"
+          default_open={true}
+        />
       </div>
+      <Footer />
     </div>
   );
 }

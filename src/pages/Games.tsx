@@ -1,10 +1,14 @@
 import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
 import { InfoSection } from "../components/infoRooms";
-import Dropdown from "../components/dropdown";
+import DropdownClassic from "../components/dropdownGamesClassic";
+import DropdownMafia from "../components/dropdownGamesMafia";
+import DropdownImagination from "../components/dropdownGamesImagination";
+import DropdownThinking from "../components/dropdownGamesThinking";
 import { Footer } from "../components/footer";
 
 import styles from "./Home.module.css"
+
 
 
 // import mySVG from "../../public/logo.svg"
@@ -29,19 +33,23 @@ function Games() {
       </div>
       <div className={styles.text}>
         <InfoSection />
-        <Dropdown 
+        <DropdownClassic 
           label="Классические игры"
+          default_open={false}
         />
-        <Dropdown 
+        <DropdownMafia 
           label="Похожие на мафию"
+          default_open={false}
         />
-        <Dropdown 
+        <DropdownImagination 
           label="Требующие воображения"
+          default_open={false}
         />
-        <Dropdown 
+        <DropdownThinking
           label="На подумать"
+          default_open={false}
         />
-        <h2>И много много ещё..</h2>
+        <h2>И много много ещё...</h2>
       </div>
       <Footer />
     </div>
