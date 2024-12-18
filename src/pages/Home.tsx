@@ -2,8 +2,8 @@ import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
 import { Activities } from "../components/activities";
 import { InfoSection } from "../components/infoCaffe";
-import { Reviews } from "../components/reviews";
-import { WhySection } from "../components/why";
+import { Reviews } from "../components/homeReviews";
+import { WhySection } from "../components/homeWhy";
 import { Footer } from "../components/footer";
 
 import styles from "./Home.module.css"

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import styles from "./Dropdown.module.css";
-import { TableTops } from "../Games";
+import { TableTops } from "../gameList";
 
 interface DropdownButtonProps {
   label: string

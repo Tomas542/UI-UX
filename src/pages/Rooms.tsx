@@ -1,6 +1,6 @@
 import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
-import { InfoSection } from "../components/infoRooms";
+import { InfoSection } from "../components/roomInfo";
 import { RoomImages } from "../components/roomImages";
 import { Footer } from "../components/footer";
 

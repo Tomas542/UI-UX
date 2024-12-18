@@ -1,5 +1,5 @@
 import styles from './HeaderSection.module.css';
-import { Button } from '../button';
+import { Button } from '../headerButton';
 import { useNavigate } from 'react-router-dom';
 
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Food } from "../food";
+import { Food } from "../menuFood";
 
 import styles from "./Dropdown.module.css";
 

@@ -1,7 +1,7 @@
 import { Header } from "../components/header";
 import { Slogan } from "../components/slogan";
 import { InfoSection } from "../components/infoMenu";
-import DropdownMenu from "../components/dropdownMenu";
+import DropdownMenu from "../components/menuDropdown";
 import { Footer } from "../components/footer";
 
 import styles from "./Home.module.css"
