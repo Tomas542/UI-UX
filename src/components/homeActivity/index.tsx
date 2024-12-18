@@ -19,7 +19,7 @@ export const Activity = ({ header_text, main_text, img_src }: ActivityProps) => 
           marginRight: "0px",
           boxSizing: "content-box"
         }}>
-          <img src={img_src} data-original="https://static.tildacdn.com/tild3162-3761-4831-a630-636661326136/icons8---100.png" alt=""></img>
+          <img src={img_src} alt=""></img>
         </div>
         <div style={{
           paddingLeft: "20px",

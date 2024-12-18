@@ -1,4 +1,4 @@
-import { Activity } from "../activity"
+import { Activity } from "../homeActivity"
 import styles from './Activities.module.css';
 
 export const Activities = () => {
